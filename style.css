@@ -593,6 +593,26 @@ html, body {
   }
 }
 
+@keyframes testAnimation {
+	from {
+		color: red;
+		font-size: 10px;
+	}
+	to {
+		color: black;
+		font-size: 50px;
+	}
+}
+
+.test-animation{
+	animation-name: wipe-enter;
+    animation-duration: 5s;
+}
+
+.test{
+	color: red;
+	font-size: 10px;
+}
 
 
 
