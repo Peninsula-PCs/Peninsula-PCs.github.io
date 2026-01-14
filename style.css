@@ -592,5 +592,14 @@ html, body {
 	flex-wrap: wrap;
   }
 }
+.test{
+	font-size: 10px;
+	color: red;
+	transistion: all ease 2s;
+}
+.test .in-view{
+	font-size: 40px;
+	color: blue;
+}
 
 
