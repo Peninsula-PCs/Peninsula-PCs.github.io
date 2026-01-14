@@ -138,12 +138,12 @@
         const test = entry.target.querySelector('.test');
     
         if (entry.isIntersecting) {
-          test.classList.add('testAnimation');
+          test.classList.add('test-animation');
     	  return; // if we added the class, exit the function
         }
     
         // We're not intersecting, so remove the class!
-        test.classList.remove('testAnimation');
+        test.classList.remove('test-animation');
       });
     });
     
@@ -151,6 +151,7 @@
         }); 
   </script>
 </html>
+
 
 
 
