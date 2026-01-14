@@ -592,15 +592,7 @@ html, body {
 	flex-wrap: wrap;
   }
 }
-p {
-	font-size: 10px;
-	color: red;
-	transistion: all ease 2s;
-}
-p .in-view{
-	font-size: 40px;
-	color: blue;
-}
+
 
 
 
