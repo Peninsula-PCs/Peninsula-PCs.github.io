@@ -133,24 +133,25 @@
     <p class="test">awiouotttttttttttttttttttttttttttttttttttgoaIUwhdoiuHawoiuHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHOIAUhwoiudaubwubdalkjllllllllllllllllllllllllkjwbdlkjabw</p>
   </body>
   <script>
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        const test = entry.target.querySelector('.test');
-    
-        if (entry.isIntersecting) {
-          test.classList.add('test-animation');
-    	  return; // if we added the class, exit the function
-        }
-    
-        // We're not intersecting, so remove the class!
-        test.classList.remove('test-animation');
-      });
-    });
-    
-    observer.observe(document.querySelector('.test'));
-        }); 
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+          } else {
+            entry.target.classList.remove('in-view');
+          }
+        });
+      },
+      {
+        threshold: 0.1
+      }
+    );
+
+    document.querySelectorAll('.test').forEach(el => observer.observe(el));
   </script>
 </html>
+
 
 
 
