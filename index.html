@@ -131,8 +131,28 @@
       </div>
     </div>
     <p class="test">awiouotttttttttttttttttttttttttttttttttttgoaIUwhdoiuHawoiuHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHOIAUhwoiudaubwubdalkjllllllllllllllllllllllllkjwbdlkjabw</p>
+ <script>
+  const cardsSection = document.querySelector('.cards');
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        cardsSection.classList.add('in-view');
+      } else {
+        cardsSection.classList.remove('in-view');
+      }
+    },
+    {
+      threshold: 0.5
+    }
+  );
+
+  observer.observe(cardsSection);
+</script>
+
   </body>
 </html>
+
 
 
 
