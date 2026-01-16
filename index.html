@@ -41,8 +41,8 @@
       <h3 class="featured-slogan">The future of gaming, PreBuilt.</h3>
     </div>
     <div class="fakeBody">
-      <div class="container">
-        <div class="card">
+      <div class="container cards">
+        <div class="card card-left">
           <div class="imgBx">
             <img src="img1.png" alt="">
           </div>
@@ -58,7 +58,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card card-center">
           <div class="imgBx">
             <img src="img2.png" alt="">
           </div>
@@ -74,7 +74,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card card-right">
           <div class="imgBx">
             <img src="img3.png" alt="">
           </div>
@@ -132,25 +132,8 @@
     </div>
     <p class="test">awiouotttttttttttttttttttttttttttttttttttgoaIUwhdoiuHawoiuHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHOIAUhwoiudaubwubdalkjllllllllllllllllllllllllkjwbdlkjabw</p>
   </body>
-  <script>
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
-          } else {
-            entry.target.classList.remove('in-view');
-          }
-        });
-      },
-      {
-        threshold: 0.1
-      }
-    );
-
-    document.querySelectorAll('.test').forEach(el => observer.observe(el));
-  </script>
 </html>
+
 
 
 
